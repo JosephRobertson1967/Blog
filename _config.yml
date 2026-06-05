@@ -1,80 +1,14 @@
-# ===============================
-# DAILY BUGLE DIGITAL — BLOG CONFIG
-# Editor-in-Chief: J. Robertson
-# Internal Use: Jekyll Build System
-# ===============================
+title: "The Daily Bugle — Field Reports"
+description: "Street-level reporting, investigations, and city updates from NYC."
+author: "Joseph Robertson"
 
-title: "The Daily Bugle — Field Notes & City Reports"
-description: "A grounded, no-nonsense log of New York City events, investigations, and public interest reporting."
-
-# Site identity
-author:
-  name: "Joseph Robertson"
-  role: "Editor-in-Chief"
-  outlet: "The Daily Bugle"
-  location: "New York City"
-
-# URL settings
 url: "https://yourusername.github.io"
 baseurl: ""
 
-# Theme
-theme: minima
+theme: jekyll-theme-minimal
 
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-# Plugins (keep minimal for GitHub Pages compatibility)
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# Time formatting
 timezone: America/New_York
-
-# Collections (optional structure for reporting categories)
-collections:
-  reports:
-    output: true
-    permalink: /reports/:name/
-
-# Defaults (Bugle-style consistency)
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      author: "Joseph Robertson"
-      category: "field-report"
-      show_date: true
-
-# Navigation
-header_pages:
-  - about.md
-  - reports.md
-
-# Social (kept professional, minimal exposure)
-social_links:
-  newsroom: "The Daily Bugle"
-  editor: "Joseph Robertson"
-
-# Feed settings
-feed:
-  excerpt_only: false
-
-# SEO settings
-seo:
-  title: false
-
-# Content tone guidelines (internal editorial note)
-# - Reports must remain factual, concise, and grounded
-# - Avoid sensational framing unless sourced
-# - Prioritize civic clarity over narrative embellishment
-
-# Exclusions
-exclude:
-  - README.md
-  - node_modules/
-  - vendor/
